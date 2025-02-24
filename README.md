@@ -7,7 +7,7 @@
  
  **Reference:** [Hex-Maps in Tableau](https://www.tableau.com/blog/viz-whiz-hex-tile-maps-64713)
 
- **Objective:** Analyze airline arrival statistics by state/region, carrier (Delta, SouthWest, etc.) to determine regions with poor airline service
+ **Objective:** Analyzed airline arrival statistics by state/region, carrier (Delta, SouthWest, etc.) to identify carriers and regions with poor service
 
 *Note: An airline is reported as a late arrival if the actual arrival time is more than 15 minutes after its scheduled arrival time*
 
