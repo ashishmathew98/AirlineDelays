@@ -15,4 +15,6 @@
 
  **Findings:**
  - New Jersey had a 27% arrival delay rate in November 2024, nearly twice the national average (14%). Regarding the cause for delays, 63% were due to the National Air System (NAS). This was driven by [FAA staffing shortages at Newark](https://www.reuters.com/business/aerospace-defense/united-says-faa-staffing-shortages-causing-significant-disruption-newark-hub-2024-11-26/)
+ - Delta outperformed the other big carriers (American Airlines, SouthWest and United) with a 11% delay rate. Delata outperformed its competitors across regions
+   ![alt text](./images/big4_carriers.png)
  
