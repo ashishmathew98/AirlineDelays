@@ -21,7 +21,7 @@
     <WindowsPersistSimpleIdentifiers />
     <WorksheetBackgroundTransparency />
   </document-format-change-manifest>
-  <repository-location id='AirlineDelays_17404230060070' path='/workbooks' revision='1.1' />
+  <repository-location id='AirlineDelays_17404230060070' path='/workbooks' revision='1.3' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -1416,7 +1416,7 @@
       <layout-options>
         <title>
           <formatted-text>
-            <run fontsize='11'>Delay Rates of the Big Four by Region</run>
+            <run fontsize='11'>Delay Rates of the Big Four Carriers by Region</run>
           </formatted-text>
         </title>
       </layout-options>
@@ -1564,8 +1564,11 @@
                 <format attr='size' value='0.25' />
               </style-rule>
               <style-rule element='pane'>
-                <format attr='minwidth' value='-1' />
-                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='464' />
+                <format attr='maxwidth' value='464' />
+                <format attr='minheight' value='350' />
+                <format attr='maxheight' value='350' />
+                <format attr='aspect' value='0' />
               </style-rule>
             </style>
           </pane>
@@ -1579,7 +1582,7 @@
       <layout-options>
         <title>
           <formatted-text>
-            <run>Delay Rate of Carriers with 10K+ flights in Nov-24</run>
+            <run fontsize='11'>Delay Rate of Carriers with 10K+ flights in Nov-24</run>
           </formatted-text>
         </title>
       </layout-options>
@@ -1612,10 +1615,10 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <format attr='title' class='0' field='[federated.02d9hqb0yovgoj1f95t400x8ub7d].[avg:Calculation_694961768122015745:qk]' scope='cols' value='Delay Rate' />
+            <format attr='title' class='0' field='[federated.02d9hqb0yovgoj1f95t400x8ub7d].[avg:Calculation_694961768122015745:qk]' scope='cols' value='% Flights Delayed' />
           </style-rule>
           <style-rule element='header'>
-            <format attr='width' field='[federated.02d9hqb0yovgoj1f95t400x8ub7d].[none:carrier_name:nk]' value='316' />
+            <format attr='width' field='[federated.02d9hqb0yovgoj1f95t400x8ub7d].[none:carrier_name:nk]' value='172' />
           </style-rule>
         </style>
         <panes>
@@ -1624,9 +1627,15 @@
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
-            <encodings>
-              <color column='[federated.02d9hqb0yovgoj1f95t400x8ub7d].[none:carrier_name:nk]' />
-            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='562' />
+                <format attr='maxwidth' value='562' />
+                <format attr='minheight' value='260' />
+                <format attr='maxheight' value='260' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
           </pane>
         </panes>
         <rows>[federated.02d9hqb0yovgoj1f95t400x8ub7d].[none:carrier_name:nk]</rows>
@@ -1895,8 +1904,8 @@
           </layout-options>
           <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='26' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='30' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone h='4375' id='22' type-v2='title' w='95200' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1957,7 +1966,7 @@
     </dashboard>
   </dashboards>
   <windows source-height='30'>
-    <window class='dashboard' name='Dashboard 1'>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
       <viewpoints>
         <viewpoint name='Big Four Delay Rate'>
           <zoom type='entire-view' />
@@ -2023,15 +2032,10 @@
             <card type='title' />
           </strip>
         </edge>
-        <edge name='right'>
-          <strip size='160'>
-            <card pane-specification-id='0' param='[federated.02d9hqb0yovgoj1f95t400x8ub7d].[none:carrier_name:nk]' type='color' />
-          </strip>
-        </edge>
       </cards>
       <simple-id uuid='{677F44C9-700B-46C9-BA2D-A4F40849F78E}' />
     </window>
-    <window class='worksheet' maximized='true' name='Big Four Delay Rate'>
+    <window class='worksheet' name='Big Four Delay Rate'>
       <cards>
         <edge name='left'>
           <strip size='160'>
